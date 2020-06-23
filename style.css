@@ -1,0 +1,118 @@
+/*----------- Remove circles -----------*/
+.avatar-user {
+  border-radius: 6px !important;
+}
+
+.user-status-circle-badge-container {
+  display: none;
+}
+
+.calendar-graph rect.day {
+  shape-rendering: crispedges;
+}
+
+
+/*----------- Repo view -----------*/
+.repository-content {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.repository-content .Box-row {
+  border-top: 1px solid #dcdcdc !important;
+}
+
+.repository-content > .gutter-condensed {
+  flex-direction: column-reverse !important;
+  align-items: center;
+}
+
+.repository-content > .gutter-condensed > div {
+  width: 100% !important;
+}
+
+.repository-content > .gutter-condensed > div:nth-child(1) {
+  max-width: 1100px;
+}
+
+/*----------- Repo information -----------*/
+.repository-content > .gutter-condensed > div:nth-child(2) {
+  margin: 15px 0 40px;
+  max-width: 1100px;
+}
+
+.repository-content .BorderGrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.repository-content .BorderGrid--spacious .BorderGrid-cell {
+  padding: 10px 20px;
+}
+
+.repository-content .BorderGrid-row {
+  margin: 5px;
+}
+
+/*First information block (tags)*/
+.repository-content .BorderGrid-row:nth-child(1) {
+  flex-basis: 100%;
+}
+
+.repository-content .BorderGrid-row:nth-child(1) > div,
+.repository-content .BorderGrid-row:nth-last-child(1) > div {
+  display: block;
+  position: relative;
+}
+
+/*Readme btn*/
+.repository-content .BorderGrid-row:nth-child(1) > div > .mt-3:nth-last-child(3) {
+  position: absolute;
+  top: 0px;
+  right: 200px;
+}
+
+/*License btn*/
+.repository-content .BorderGrid-row:nth-child(1) > div > .mt-3:nth-last-child(1) {
+  position: absolute;
+  top: 0px;
+  right: 70px;
+}
+
+/*Contributors*/
+.repository-content .BorderGrid-row:nth-last-child(2) {
+  max-width: 380px;
+}
+
+/*Languages legend*/
+.repository-content .BorderGrid-row:nth-last-child(1) {
+  width: 100%;
+}
+.repository-content .BorderGrid-row:nth-last-child(1) > div ul {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+
+/*----------- Overall -----------*/
+.pagehead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagehead > div,
+.pagehead > nav {
+  max-width: 1100px;
+  width: 100%;
+}
+
+/*Hide strange block which shows when you close console*/
+.js-skip-to-content {
+  display: none;
+}
+
+.footer {
+  max-width: 1100px;
+}
