@@ -18,10 +18,6 @@
   margin: auto;
 }
 
-.repository-content .Box-row {
-  border-top: 1px solid #dcdcdc !important;
-}
-
 .repository-content > .gutter-condensed {
   flex-direction: column-reverse !important;
   align-items: center;
@@ -33,6 +29,19 @@
 
 .repository-content > .gutter-condensed > div:nth-child(1) {
   max-width: 1100px;
+}
+
+/*----------- Repo folders -----------*/
+.repository-content .Box .Box-header {
+  padding: 10px 16px;
+}
+
+.repository-content .Box .Box-row:not(:first-child) {
+  border-top: 1px solid #dcdcdc !important;
+}
+
+.repository-content .Box .Box-row {
+  padding: 6px 16px !important:
 }
 
 /*----------- Repo information -----------*/
@@ -47,7 +56,8 @@
 }
 
 .repository-content .BorderGrid--spacious .BorderGrid-cell {
-  padding: 10px 20px;
+  padding: 8px 20px 0 0;
+  border: 0;
 }
 
 .repository-content .BorderGrid-row {
@@ -79,27 +89,80 @@
   right: 70px;
 }
 
+/*Settings icon*/
+.repository-content .BorderGrid-row:nth-child(1) .octicon-gear {
+  position: relative;
+  top: 5px;
+}
+
 /*Contributors*/
 .repository-content .BorderGrid-row:nth-last-child(2) {
   max-width: 380px;
+}
+
+.repository-content .BorderGrid-row:nth-last-child(2) .mb-n2 {
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.repository-content .BorderGrid-row:nth-last-child(2) .BorderGrid-cell {
+  position: relative;
+}
+
+.repository-content .BorderGrid-row:nth-last-child(2) .mt-3:nth-last-child(1) {
+  position: absolute;
+  top: -5px;
+  right: 47px;
 }
 
 /*Languages legend*/
 .repository-content .BorderGrid-row:nth-last-child(1) {
   width: 100%;
 }
+
 .repository-content .BorderGrid-row:nth-last-child(1) > div ul {
   position: absolute;
   top: 15px;
   right: 10px;
 }
 
+.repository-content .BorderGrid-row:nth-last-child(1) .BorderGrid-cell {
+  border: none;
+  padding: 0px;
+}
+
 
 /*----------- Overall -----------*/
+.btn {
+  background: linear-gradient(#ffffff, #eef2f6);
+  font-weight: 600;
+}
+
+.get-repo-btn:hover,
+.commit-group .btn:hover,
+.paginate-container .btn:hover {
+  background: #0366d6;
+}
+
+.btn-primary {
+  background: linear-gradient(#3dc65a, #36a950);
+  font-weight: 600;
+}
+
 .pagehead {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 15px !important;
+}
+
+.pagehead > div:first-child {
+  margin-bottom: 5px !important;
+  padding: 0 20px !important;
+}
+
+.pagehead .UnderlineNav {
+  padding: 0 20px !important;
 }
 
 .pagehead > div,
