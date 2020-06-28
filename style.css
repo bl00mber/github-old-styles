@@ -2,11 +2,9 @@
 .avatar-user {
   border-radius: 6px !important;
 }
-
 .user-status-circle-badge-container {
   display: none;
 }
-
 .calendar-graph rect.day {
   shape-rendering: crispedges;
 }
@@ -17,16 +15,13 @@
   max-width: 1100px;
   margin: auto;
 }
-
 .repository-content > .gutter-condensed {
   flex-direction: column-reverse !important;
   align-items: center;
 }
-
 .repository-content > .gutter-condensed > div {
   width: 100% !important;
 }
-
 .repository-content > .gutter-condensed > div:nth-child(1) {
   max-width: 1100px;
 }
@@ -35,11 +30,9 @@
 .repository-content .Box .Box-header {
   padding: 10px 16px;
 }
-
 .repository-content .Box .Box-row:not(:first-child) {
   border-top: 1px solid #dcdcdc !important;
 }
-
 .repository-content .Box .Box-row {
   padding: 6px 16px !important:
 }
@@ -49,17 +42,14 @@
   margin: 15px 0 40px;
   max-width: 1100px;
 }
-
 .repository-content .BorderGrid {
   display: flex;
   flex-wrap: wrap;
 }
-
 .repository-content .BorderGrid--spacious .BorderGrid-cell {
   padding: 8px 20px 0 0;
   border: 0;
 }
-
 .repository-content .BorderGrid-row {
   margin: 5px;
 }
@@ -68,7 +58,6 @@
 .repository-content .BorderGrid-row:nth-child(1) {
   flex-basis: 100%;
 }
-
 .repository-content .BorderGrid-row:nth-child(1) > div,
 .repository-content .BorderGrid-row:nth-last-child(1) > div {
   display: block;
@@ -99,16 +88,13 @@
 .repository-content .BorderGrid-row:nth-last-child(2) {
   max-width: 380px;
 }
-
 .repository-content .BorderGrid-row:nth-last-child(2) .mb-n2 {
   max-height: 40px;
   overflow: hidden;
 }
-
 .repository-content .BorderGrid-row:nth-last-child(2) .BorderGrid-cell {
   position: relative;
 }
-
 .repository-content .BorderGrid-row:nth-last-child(2) .mt-3:nth-last-child(1) {
   position: absolute;
   top: -5px;
@@ -119,13 +105,11 @@
 .repository-content .BorderGrid-row:nth-last-child(1) {
   width: 100%;
 }
-
 .repository-content .BorderGrid-row:nth-last-child(1) > div ul {
   position: absolute;
   top: 15px;
   right: 10px;
 }
-
 .repository-content .BorderGrid-row:nth-last-child(1) .BorderGrid-cell {
   border: none;
   padding: 0px;
@@ -137,13 +121,11 @@
   background: linear-gradient(#ffffff, #eef2f6);
   font-weight: 600;
 }
-
 .get-repo-btn:hover,
 .commit-group .btn:hover,
 .paginate-container .btn:hover {
   background: #0366d6;
 }
-
 .btn-primary {
   background: linear-gradient(#3dc65a, #36a950);
   font-weight: 600;
@@ -155,16 +137,13 @@
   align-items: center;
   margin-bottom: 15px !important;
 }
-
 .pagehead > div:first-child {
   margin-bottom: 5px !important;
   padding: 0 20px !important;
 }
-
 .pagehead .UnderlineNav {
   padding: 0 20px !important;
 }
-
 .pagehead > div,
 .pagehead > nav {
   max-width: 1100px;
@@ -178,4 +157,41 @@
 
 .footer {
   max-width: 1100px;
+}
+
+/*Do not change header to mobile style when changing dimensions*/
+.d-lg-none {
+  display: none !important;
+}
+.d-lg-flex {
+  display: flex !important;
+}
+body header .Header-item.Header-item--full.Details-content--hidden {
+  display: flex !important;
+  margin-right: 16px!important;
+  margin-top: 0!important;
+  order: inherit!important;
+  flex-direction: row!important;
+}
+.Header {
+  flex-wrap: nowrap !important;
+}
+.Header-item nav {
+  flex-direction: row !important;
+}
+.Header-item nav a,
+.Header-item nav div {
+  border: none !important;
+}
+.mr-lg-3 {
+  margin-right: 16px!important;
+}
+.header-search {
+  margin-right: 16px!important;
+  margin-bottom: 0!important;
+  align-items: center;
+  display: flex;
+}
+.header-search > div {
+  min-width: 300px;
 }
