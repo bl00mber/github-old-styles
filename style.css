@@ -11,6 +11,7 @@
 
 
 /*----------- Repo view -----------*/
+.bg-gray-light,
 .repository-content {
   max-width: 1100px;
   margin: auto;
@@ -194,4 +195,9 @@ body header .Header-item.Header-item--full.Details-content--hidden {
 }
 .header-search > div {
   min-width: 300px;
+}
+
+/*Search form*/
+.js-site-search-form {
+  max-width: 270px;
 }
